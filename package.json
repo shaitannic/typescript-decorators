@@ -1,0 +1,21 @@
+{
+	"name": "typescript",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"dependencies": {
+		"typescript": "^3.3.3"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"build:ts": "tsc",
+		"start": "node ./build/index.js",
+		"start:watch": "nodemon ./build/index.js",
+		"start:debug": "node --inspect ./build/index.js",
+		"start:debug:brk": "node --inspect-brk ./build/index.js",
+		"start:debug:ts": "node --inspect --require ts-node/register ./src/index.ts",
+		"start:debug:ts:brk": "node --inspect-brk --require ts-node/register ./src/index.ts"
+	},
+	"author": "",
+	"license": "ISC"
+}
